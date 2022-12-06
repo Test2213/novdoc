@@ -1,3 +1,8 @@
+docker build -t myapache .
+
+docker run -itd -p 80:80 --name a1 myapache
+
+curl localhost:80
 vim Dockerfile
   FROM ubuntu:18.04
   RUN  apt-get update
